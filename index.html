@@ -5,17 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <link rel="stylesheet" href="product-landing.css">
 
 </head>
 <header id="header">
-    <img src="/img/logo.jpg" alt="logo empresa" width="300px">
+    <div class="headbar">
+        <img id="header-img" src="img/logo.jpg" alt="logo empresa" width="120px">
+        <div class="title">Funky Fruit</div>
+        <div class="nav">
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link" href="#">Products</a></li>
+                    <li><a class="nav-link" href="#">Special Offers</a></li>
+                    <li><a class="nav-link" href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
 </header>
-
-
-
 <body>
+    <div class=breadcrumbs>
+        <p><a href="#">Home</a>
+        >
+        <a href="#">Pianos</a>
+        >
+        <a href="#">Digital Pianos</a>
+        </p>
+    </div>
     
+    <div class="product-container">
+        <div class="product-image">
+            <img id="image" src="img/digital-piano-1.jpg" alt="piano yamaha">
+        </div>
+        <div class="product-description">
+            <h1>Yamaha P125 Digital Piano</h1>
+            <p class="product-price">659,95 €</p>
+            <ul class="product-features">
+                <li>A fully weighted digital piano with 88 full-sized piano-style keys</li>
+                <li>GHS weighted action is heavier in the low keys and lighter in the high keys, just like an acoustic piano </li>
+                <li>The pure CF sound engine faithfully reproduces the tone of the acclaimed Yamaha 9' CFIIIS Concert Grand piano. Tempo Range: 5 - 280 </li>
+                <li>3-Pedal units for Yamaha P125B Digital Piano </li>
+                <li>Yamaha L125B Wooden Furniture Stand is required for use </li>
+                <li>Not compatible with P115 or any other Yamaha digital piano </li>
+            </ul>
+        <div class="cart-button"><button type="button">Add to cart</button></div>
+        </div>
+    </div>
+
+    <div class="embed-video">
+        <iframe id="video"
+        width="640" height="360" 
+        src="https://www.youtube.com/embed/Hg7jEoSMFpQ" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+        </iframe>
+    </div>
+    
+    <div class="subscribe">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="GET">
+            <label for="email">Subscribe to recieve the latest offers!</label>
+            <input id="email" name="email" type="email" placeholder="Your Email">
+            <input id="submit" type="submit" value="Subscribe!">
+        </form>
+    </div>
+
 </body>
 
 

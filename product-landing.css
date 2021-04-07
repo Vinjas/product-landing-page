@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lobster&display=swap');
+
+:root {
+    --red: #CF1E23;
+    --black: #231F20;
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--black); 
+}
+body {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+header {
+
+    font-family: 'Lobster', cursive;
+    background: white;
+}
+a {
+    color: var(--red);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--black);
+}
+li {
+    list-style: square;
+}
+h1 {
+    font-family: 'Lobster', cursive;
+}
+nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+nav li {
+    list-style: none;
+    padding: 20px;
+    font-size: 20px;
+}
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+} 
+.title {
+    font-size: 46px;
+    cursor: pointer;
+}
+.headbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.breadcrumbs {
+    text-align: center;
+    font-size: 20px;
+    color: var(--red);
+    padding-top: 1px;
+    background: cornsilk;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+    }
+}
+.product-image {
+    flex-basis: 50%;
+}
+.product-description {
+    flex-basis: 50%;
+}
+#image {
+    display: block;
+    max-width: 100%;
+}
+.product-price {
+    font-weight: bold;
+    font-size: 2rem;
+}
+.product-features {
+    list-style: square;
+    line-height: 1.5;
+    text-align: justify;
+}
+button {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    background: none;
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+}
+.cart-button {
+    background: var(--red);
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+}
+.cart-button:hover {
+    background: var(--black);
+
+}
+.embed-video {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
