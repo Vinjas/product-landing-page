@@ -16,7 +16,7 @@ body {
     margin: auto;
 }
 header {
-
+    position: fixed;
     font-family: 'Lobster', cursive;
     background: white;
 }
@@ -62,7 +62,8 @@ nav > ul {
     text-align: center;
     font-size: 20px;
     color: var(--red);
-    padding-top: 1px;
+    padding-top: 100px;
+
     background: cornsilk;
 }
 .product-container {
